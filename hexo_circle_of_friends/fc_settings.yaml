@@ -15,11 +15,12 @@
 #   - stellar：stellar主题
 # 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。***至少配置一个***
 LINK:
-    - {link: "https://blog.thatcoder.cn/fcircle/", theme: "butterfly"}  # 友链页地址1，修改为你的友链页地址
-    - {link: "https://www.thatcoder.cn/fcircle/", theme: "butterfly"}  # 友链页地址1
-    - {link: "https://thatcoder.cn/fcircle/", theme: "butterfly"}  # 友链页地址1
-    - {link: "https://thatcoders.github.io/fcircle/", theme: "butterfly"}  # 友链页地址1
-    - {link: "https://thatcoder.gitee.io/fcircle/", theme: "butterfly"}  # 友链页地址1
+    - {link: "https://blog.thatcoder.cn/fcircle/", theme: "stellar"}  # 友链页地址1，修改为你的友链页地址
+    - {link: "https://www.thatcoder.cn/fcircle/", theme: "stellar"}  # 友链页地址1
+    - {link: "https://thatcoder.cn/fcircle/", theme: "stellar"}  # 友链页地址1
+    - {link: "https://thatcoders.github.io/fcircle/", theme: "stellar"}  # 友链页地址1
+    - {link: "https://thatcoder.gitee.io/fcircle/", theme: "stellar"}  # 友链页地址1
+    - {link: "https://localhost:4000/social/rss/", theme: "stellar"}  # 友链页地址1
 
 # 配置项友链
 # enable：# 是否启用配置项友链 true/false（针对还未适配主题或者有定制需求的用户）
@@ -48,8 +49,8 @@ SETTINGS_FRIENDS_LINKS: {
 # get links from gitee
 # 从gitee issue中获取友链
 GITEE_FRIENDS_LINKS: {
-    enable: false, # true 开启gitee issue兼容
-    type: "normal",  # volantis/stellar用户请在这里填写volantis
+    enable: true, # true 开启gitee issue兼容
+    type: "volantis",  # volantis/stellar用户请在这里填写volantis
     owner:  "thatcoder",  # 填写你的gitee用户名
     repo:  "hexo-friends-issue",  # 填写你的gitee仓库名
     state:  "open",  # 填写抓取的issue状态(open/closed)
@@ -59,11 +60,11 @@ GITEE_FRIENDS_LINKS: {
 # 从github issue中获取友链
 GITHUB_FRIENDS_LINKS: {
     enable: true, # true 开启github issue兼容
-    type: "normal",  # volantis/stellar用户请在这里填写volantis
+    type: "volantis",  # volantis/stellar用户请在这里填写volantis
     owner: "ThatCoders",  # 填写你的github用户名
     repo: "hexo-circle-of-friends",  # 填写你的github仓库名
     state: "open",  # 填写抓取的issue状态(open/closed)
-    label: "active",  # 填写抓取的issue标签
+    label: "friend",  # 填写抓取的issue标签
 }
 
 # block site list
