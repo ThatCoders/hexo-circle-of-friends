@@ -55,7 +55,7 @@ GITEE_FRIENDS_LINKS: {
 # 从github issue中获取友链
 GITHUB_FRIENDS_LINKS: {
     enable: true, # true 开启github issue兼容
-    type: "normal",  # volantis/stellar用户请在这里填写volantis
+    type: "volantis",  # volantis/stellar用户请在这里填写volantis
     owner: "ThatCoders",  # 填写你的github用户名
     repo: "thatcoders.github.io",  # 填写你的github仓库名
     state: "open",  # 填写抓取的issue状态(open/closed)
@@ -75,7 +75,7 @@ BLOCK_SITE: [
 HTTP_PROXY: false
 
 # 过期文章清除（天）
-OUTDATE_CLEAN: 60
+OUTDATE_CLEAN: 180
 
 # 5.x以后默认为sqlite，同时不建议使用leancloud
 # 存储方式，可选项：leancloud，mysql，sqlite，mongodb；默认为sqlite
