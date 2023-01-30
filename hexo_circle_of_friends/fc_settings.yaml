@@ -44,7 +44,7 @@ SETTINGS_FRIENDS_LINKS: {
 # get links from gitee
 # 从gitee issue中获取友链
 GITEE_FRIENDS_LINKS: {
-    enable: true, # true 开启gitee issue兼容
+    enable: false, # true 开启gitee issue兼容
     type: "volantis",  # volantis/stellar用户请在这里填写volantis
     owner:  "thatcoder",  # 填写你的gitee用户名
     repo:  "hexo-friends-issue",  # 填写你的gitee仓库名
@@ -57,7 +57,7 @@ GITHUB_FRIENDS_LINKS: {
     enable: true, # true 开启github issue兼容
     type: "volantis",  # volantis/stellar用户请在这里填写volantis
     owner: "ThatCoders",  # 填写你的github用户名
-    repo: "thatcoder.github.io",  # 填写你的github仓库名
+    repo: "thatcoders.github.io",  # 填写你的github仓库名
     state: "open",  # 填写抓取的issue状态(open/closed)
     label:  "Cheers",
 }
