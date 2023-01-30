@@ -66,12 +66,11 @@ class FriendpageLinkSpider(scrapy.Spider):
         # 向github发送请求获取友链
         if self.settings["GITHUB_FRIENDS_LINKS"]["enable"]:
             for number in range(1, 100):
-                domain = 'https://github.com'
+                domain = 'https://api.github.com/repos'
                 dic = self.settings["GITHUB_FRIENDS_LINKS"]
-                url = domain + "/" + dic["owner"] + "/" + dic["repo"] + "/issues?page=" + str(number) + '&q=is%3A' + dic[
-                    "state"]
+                url = domain + "/" + dic["owner"] + "/issues?page=" + str(number) + '&'
                 if dic["label"]:
-                    url = url + '+label%3A' + dic["label"]
+                    url = url + '+labels=' + dic["label"]
                 yield Request(url, callback=self.friend_poor_parse, meta={"github": {"domain": domain}})
         # 初始化起始请求链接
         friendpage_link, friendpage_theme = self.init_start_urls()
