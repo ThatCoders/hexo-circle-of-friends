@@ -47,11 +47,11 @@ app.add_middleware(
 
 
 @app.get("/all", tags=["PUBLIC_API"], summary="返回完整统计信息")
-def all(start: int = 0, end: int = -1, rule: str = "updated"):
+def all(start: int = 0, end: int = -1, rule: str = "created"):
     """返回数据库统计信息和文章信息列表
     - start: 文章信息列表从 按rule排序后的顺序 的开始位置
     - end: 文章信息列表从 按rule排序后的顺序 的结束位置
-    - rule: 文章排序规则（创建时间created/更新时间updated）
+    - rule: 文章排序规则（创建时间created/更新时间updated）(发现有些博客有时候会更新所有文章)
     """
     list_ = ['title', 'created', 'updated', 'link', 'author', 'avatar']
     return query_all(list_, start, end, rule)
