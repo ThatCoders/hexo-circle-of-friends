@@ -31,10 +31,10 @@ LINK: [
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
 SETTINGS_FRIENDS_LINKS: {
     enable: true,
-    json_api: "",
+    json_api: "./friends.json",
     list: [
         # 示例1：
-        ["carrot·鸿", "https://noionion.top/", "https://upyun.galasp.cn/2022/01/30/b8218896cc64c.jpg", "https://api.galasp.cn/artcles/emerge?limit=20"],
+        # ["carrot·鸿", "https://noionion.top/", "https://upyun.galasp.cn/2022/01/30/b8218896cc64c.jpg", "https://api.galasp.cn/artcles/emerge?limit=20"],
         # ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/images/headimage.png"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
