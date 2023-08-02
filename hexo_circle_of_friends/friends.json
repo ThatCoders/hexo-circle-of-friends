@@ -1,18 +1,16 @@
 {
   "friends": [
     {
-      "class_name": "直接订阅",   # 分组名称
-      "class_desc": "用自己api的方式, 且域名不一致",  # 分组说明
+      "class_name": "直接订阅",   
+      "class_desc": "用自己api的方式, 且域名不一致",  
       "link_list": [
         {
-          # 必须参数：名称、友链地址、头像
-          "name": "carrot·鸿",  # 友链名称
-          "link": "https://www.galasp.cn/",  # 友链地址
-          "avatar": "https://upyun.galasp.cn/2022/01/30/b8218896cc64c.jpg",  # 友链头像
-          # 额外参数，可以无限制扩展
-            "suffix": "https://api.galasp.cn/artcles/emerge?limit=20"  # 自定义后缀
-          "descr": "实践是检验真理的唯一标准。",  # 友链描述
-          "siteshot": "https://cdn.seclusion.work/myself/typora/202308021719915.png!screenshot",  # 站点截图
+          "name": "carrot·鸿",
+          "link": "https://www.galasp.cn/",
+          "avatar": "https://upyun.galasp.cn/2022/01/30/b8218896cc64c.jpg",
+            "suffix": "https://api.galasp.cn/artcles/emerge?limit=20"
+          "descr": "实践是检验真理的唯一标准。",
+          "siteshot": "https://cdn.seclusion.work/myself/typora/202308021719915.png!screenshot",
           "api_url": "https://api.galasp.cn/artcles/emerge?limit=20"
         },
   ]
